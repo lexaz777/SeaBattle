@@ -1,4 +1,4 @@
-package seabattle;
+package com.github.lexa777757.seabattle;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -13,27 +13,22 @@ public class DotCom {
 
     public DotCom(int sizeOfShip){
          for(int i=0;i<sizeOfShip;i++){
-            locateCells.add(String.(Math.random()*10));
+            locateCells.add(String.valueOf((int)(Math.random()*10)));
         }
-
     }
+
     public void checkYourGuess(String Guess){
-
-           int numberOfGuess = Integer.parseInt(Guess);
-
-           int index = locateCells.indexOf(numberOfGuess);
-           if (index>=0) {
+           int index = locateCells.indexOf(Guess);
+           if (index>= 0) {
                locateCells.remove(index);
                System.out.println("Попал! ");
-
-           }
+           }else System.out.println("Вы промахнулись, пробуйте еще!");
            if (locateCells.isEmpty()) {
                isAlive = false;
            }
-
     }
     public int getShipSize(){
-        return locateCells.length;
+        return locateCells.size();
     }
 
 }
