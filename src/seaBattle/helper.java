@@ -1,4 +1,4 @@
-package seaBattle;
+package seabattle;
 
 import java.io.BufferedReader;
 import java.io.IOException;

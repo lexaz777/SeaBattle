@@ -1,4 +1,4 @@
-package seaBattle;
+package seabattle;
 
 /**
  * Created by Alex on 26.03.2016.
