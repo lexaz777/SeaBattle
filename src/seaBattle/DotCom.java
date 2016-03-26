@@ -1,37 +1,36 @@
-package seaBattle;
+package seabattle;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  * Created by Alex on 20.03.2016.
  */
 public class DotCom {
-    int[] locateCells;
-    private int numOfHits=0;
+    private  ArrayList<String> locateCells = new ArrayList<String>();
+
     public boolean isAlive=true;
+
     public DotCom(int sizeOfShip){
-        locateCells = new int[sizeOfShip];
-        for(int i=0;i<locateCells.length;i++){
-            locateCells[i]= (int)(Math.random()*10);
+         for(int i=0;i<sizeOfShip;i++){
+            locateCells.add(String.(Math.random()*10));
         }
 
     }
-    public boolean checkYourGuess(String Guess){
-        boolean isHitted=false;
+    public void checkYourGuess(String Guess){
 
            int numberOfGuess = Integer.parseInt(Guess);
-           for (int i = 0; i < locateCells.length; i++) {
-               if (locateCells[i] == numberOfGuess) {
-                   locateCells[i] = -31337;
-                   numOfHits++;
-                   isHitted = true;
-               }
+
+           int index = locateCells.indexOf(numberOfGuess);
+           if (index>=0) {
+               locateCells.remove(index);
+               System.out.println("Попал! ");
 
            }
-           if (numOfHits == locateCells.length) {
+           if (locateCells.isEmpty()) {
                isAlive = false;
            }
-           return isHitted;
+
     }
     public int getShipSize(){
         return locateCells.length;
