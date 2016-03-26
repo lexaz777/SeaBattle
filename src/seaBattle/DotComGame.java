@@ -13,7 +13,7 @@ public class DotComGame {
             System.out.print(frigate.locateCells[i]+" ");
         }
         System.out.println("Попробуйте его потопить!");
-        System.out.println("Вводите числа с номерами ячеек от 1 до 10");
+        System.out.println("Вводите числа с номерами ячеек от 1 до 10 ");
         while (frigate.isAlive) {
             System.out.print("Введите Ваш вариант - ");
             myGuess = help.readln();
