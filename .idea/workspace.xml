@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b46dd8a-f069-403e-b0bc-c176bb7b9faa" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com.github.lexa777757.seabattle/DotCom.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com.github.lexa777757.seabattle/DotComGame.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SeaBattle.iws" />
@@ -513,6 +511,13 @@
       <option name="number" value="Default" />
       <updated>1458499383678</updated>
     </task>
+    <task id="LOCAL-00001" summary="First commit">
+      <created>1463680417935</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1463680417935</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -553,6 +558,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
